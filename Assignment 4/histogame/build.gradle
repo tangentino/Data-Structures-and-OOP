@@ -1,0 +1,19 @@
+repositories {
+    mavenCentral()
+}
+// Apply the java plugin to add support for Java
+apply plugin: 'java'
+apply plugin: 'application'
+
+// source and source level
+sourceCompatibility = 1.8
+version = '1.0'
+mainClassName = "game.TextTwist"
+
+run{
+ standardInput = System.in
+}
+
+dependencies {
+  testCompile 'junit:junit:4.12'
+}
